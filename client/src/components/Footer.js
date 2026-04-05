@@ -47,7 +47,7 @@ function Footer() {
     <footer style={footerStyles}>
       <div style={gridStyles}>
         <div style={columnStyles}>
-          <h3 style={titleStyles}>GreenNest Plants</h3>
+          <h3 style={titleStyles}>Florixa Plant Nursery</h3>
           <p style={{ ...linkStyles, opacity: 0.7 }}>
             Bringing the tranquility of nature into your modern living spaces.
           </p>
@@ -66,7 +66,7 @@ function Footer() {
         </div>
       </div>
       <div style={copyrightStyles}>
-        &copy; {new Date().getFullYear()} GreenNest Plants. All rights reserved.
+        &copy; {new Date().getFullYear()} Florixa Plant Nursery. All rights reserved.
       </div>
     </footer>
   );

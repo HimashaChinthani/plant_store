@@ -42,7 +42,7 @@ function Navbar() {
   return (
     <nav style={navStyles} className="glass-effect">
       <Link to="/" style={logoStyles}>
-        GreenNest<span style={{ color: "var(--secondary)" }}>Plants</span>
+       Florixa Plant Nursery <span style={{ color: "var(--secondary)" }}></span>
       </Link>
       <div style={linkContainerStyles}>
         <Link to="/" style={getLinkStyle("/")}>Home</Link>

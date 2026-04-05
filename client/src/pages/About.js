@@ -49,7 +49,7 @@ function About() {
         <h1 style={{ fontSize: "3rem" }}>Our Story</h1>
         <div style={lineStyles}></div>
         <p style={textStyles}>
-          Founded in 2026, GreenNest Plants began with a simple belief: every home deserves a touch of nature's tranquility. What started as a small personal collection has grown into a curated sanctuary for plant lovers across the country.
+          Founded in 2026, Florixa Plant Nursery began with a simple belief: every home deserves a touch of nature's tranquility. What started as a small personal collection has grown into a curated sanctuary for plant lovers across the country.
         </p>
       </section>
 

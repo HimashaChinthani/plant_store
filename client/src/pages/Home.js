@@ -108,7 +108,7 @@ function Home() {
 
       {/* Featured Section */}
       <section style={sectionStyles}>
-        <h2 style={{ fontSize: "2.5rem", marginBottom: "1rem" }}>Why GreenNest?</h2>
+        <h2 style={{ fontSize: "2.5rem", marginBottom: "1rem" }}>Why Florixa Plant Nursery?</h2>
         <p style={{ color: "var(--text-muted)", maxWidth: "600px", margin: "0 auto" }}>
           We provide more than just plants; we deliver long-lasting, vibrant companions for your modern lifestyle.
         </p>
