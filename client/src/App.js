@@ -7,6 +7,8 @@ import Shop from "./pages/Shop";
 import ProductDetails from "./pages/ProductDetails";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
+import Admin from "./pages/Admin";
+import Login from "./pages/Login";
 
 function App() {
   return (
@@ -18,6 +20,8 @@ function App() {
         <Route path="/shop/:id" element={<ProductDetails />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/admin" element={<Admin />} />
+        <Route path="/greennest-portal-2026" element={<Login />} />
       </Routes>
       <Footer />
     </Router>
