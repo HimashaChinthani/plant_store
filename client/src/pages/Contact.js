@@ -1,6 +1,9 @@
 import React from "react";
 
+import { CONTACT_CONFIG } from "../config/contact";
+
 function Contact() {
+  const whatsappUrl = `https://wa.me/${CONTACT_CONFIG.whatsappNumber}?text=${encodeURIComponent(CONTACT_CONFIG.whatsappMessage)}`;
   const containerStyles = {
     padding: "8rem 5%",
     maxWidth: "1200px",
@@ -78,7 +81,7 @@ function Contact() {
           <div style={contactItemStyles}>
             <span style={labelStyles}>WhatsApp</span>
             <a 
-              href="https://wa.me/947XXXXXXXX" 
+              href={whatsappUrl} 
               target="_blank" rel="noreferrer"
               style={whatsappButtonStyles}
             >
@@ -88,19 +91,19 @@ function Contact() {
 
           <div style={contactItemStyles}>
             <span style={labelStyles}>Email Address</span>
-            <p style={valueStyles}>hello@greennest.com</p>
+            <p style={valueStyles}>hello@florixa.com</p>
           </div>
 
           <div style={contactItemStyles}>
             <span style={labelStyles}>Visit Us</span>
-            <p style={valueStyles}>123 Botanical Lane, Colombo, Sri Lanka</p>
+            <p style={valueStyles}>Denipitiya, Weligama, Sri Lanka</p>
           </div>
         </div>
 
         <div style={mapWrapperStyles}>
           <iframe 
             title="Map"
-            src="https://maps.google.com/maps?q=Colombo&t=&z=13&ie=UTF8&iwloc=&output=embed" 
+            src="https://maps.google.com/maps?q=Denipitiya%20Weligama%20Sri%20Lanka&t=&z=15&ie=UTF8&iwloc=&output=embed" 
             width="100%" 
             height="100%" 
             style={{ border: 0 }} 

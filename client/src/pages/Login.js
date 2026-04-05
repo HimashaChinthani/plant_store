@@ -75,7 +75,7 @@ function Login() {
       <div style={loginCardStyles}>
         <div>
           <h1 style={{ fontSize: "2rem", marginBottom: "0.5rem" }}>Admin Portal</h1>
-          <p style={{ color: "var(--text-muted)", fontSize: "0.95rem" }}>Secure login for GreenNest staff</p>
+          <p style={{ color: "var(--text-muted)", fontSize: "0.95rem" }}>Secure login for Florixa staff</p>
         </div>
 
         {error && (

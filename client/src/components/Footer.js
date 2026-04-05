@@ -61,8 +61,8 @@ function Footer() {
         </div>
         <div style={columnStyles}>
           <h4 style={{ ...titleStyles, color: "var(--white)", fontSize: "1rem" }}>Contact Us</h4>
-          <p style={linkStyles}>Email: hello@greennest.com</p>
-          <p style={linkStyles}>Phone: +94 77 123 4567</p>
+          <p style={linkStyles}>Email: hello@florixa.com</p>
+          <p style={linkStyles}>Phone: +94 72 486 8388</p>
         </div>
       </div>
       <div style={copyrightStyles}>
