@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
+import { CONTACT_CONFIG } from "../config/contact";
 
 function Shop() {
   const [plants, setPlants] = useState([]);
@@ -147,7 +148,7 @@ function Shop() {
               <p style={priceStyles}>LKR {plant.price}</p>
               
               <a 
-                href={`https://wa.me/947XXXXXXXX?text=Hello,%20I%20want%20to%20order%20this%20plant:%20Name:%20${encodeURIComponent(plant.name)}%20Price:%20${plant.price}`}
+                href={`https://wa.me/${CONTACT_CONFIG.whatsappNumber}?text=Hello!%20I%20want%20to%20order:%20${encodeURIComponent(plant.name)}%20(Rs.%20${plant.price})`}
                 target="_blank" rel="noreferrer"
                 style={whatsappButtonStyles}
               >

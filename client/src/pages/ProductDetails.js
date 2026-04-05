@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
 import axios from "axios";
 
+import { CONTACT_CONFIG } from "../config/contact";
+
 function ProductDetails() {
   const { id } = useParams();
   const [plant, setPlant] = useState(null);
@@ -122,7 +124,7 @@ function ProductDetails() {
         </div>
 
         <a 
-          href={`https://wa.me/947XXXXXXXX?text=Hello,%20I%20want%20to%20order%20this%20plant:%20Name:%20${encodeURIComponent(plant.name)}%20Price:%20${plant.price}`}
+          href={`https://wa.me/${CONTACT_CONFIG.whatsappNumber}?text=Hello!%20I%27m%20interested%20in%20ordering:%20${encodeURIComponent(plant.name)}%20(Rs.%20${plant.price})`}
           target="_blank" rel="noreferrer"
           style={whatsappButtonStyles}
         >
