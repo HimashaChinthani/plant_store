@@ -90,11 +90,11 @@ function Home() {
       {/* Hero Section */}
       <section style={heroStyles}>
         <img 
-          src="/hero_plant_store_1775372986857.png" 
-          alt="Modern Plant Boutique" 
+          src="/premium_hero_plant_store_1775377446929.png" 
+          alt="Luxe Botanical Space" 
           style={heroImageStyles} 
         />
-        <div style={overlayStyles}></div>
+        <div style={{ ...overlayStyles, background: "linear-gradient(90deg, rgba(251,251,250,0.95) 0%, rgba(251,251,250,0.7) 40%, transparent 100%)" }}></div>
         <div style={heroContentStyles} className="animate-fade-in">
           <h1 style={titleStyles}>Elevate Your Living Space</h1>
           <p style={descriptionStyles}>

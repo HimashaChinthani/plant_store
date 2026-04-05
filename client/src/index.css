@@ -1,27 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;500;600;700;800&display=swap');
 
 :root {
-  /* Color Palette */
+  /* Beautiful Botanical Palette */
   --primary: #1B4332;
   --primary-light: #2D6A4F;
-  --secondary: #74C69D;
+  --secondary: #52B788;
   --accent: #D4AF37;
   --accent-light: #F1D37E;
-  --bg-light: #F8F9F5;
+  --bg-light: #FBFBFA;
   --white: #FFFFFF;
   --text-main: #1B4332;
-  --text-muted: #52796F;
-  --glass: rgba(255, 255, 255, 0.7);
-  --glass-border: rgba(255, 255, 255, 0.2);
+  --text-muted: #40916C;
+  --glass: rgba(255, 255, 255, 0.82);
+  --glass-border: rgba(255, 255, 255, 0.3);
   
-  /* Shadows & Effects */
-  --shadow-sm: 0 2px 8px rgba(27, 67, 50, 0.05);
-  --shadow-md: 0 8px 30px rgba(27, 67, 50, 0.1);
-  --shadow-lg: 0 12px 40px rgba(27, 67, 50, 0.15);
-  --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  --radius-sm: 8px;
-  --radius-md: 16px;
-  --radius-lg: 24px;
+  /* Refined Shadows & Effects */
+  --shadow-sm: 0 4px 12px rgba(13, 59, 46, 0.04);
+  --shadow-md: 0 10px 40px rgba(13, 59, 46, 0.08);
+  --shadow-lg: 0 20px 60px rgba(13, 59, 46, 0.12);
+  --transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+  --radius-sm: 10px;
+  --radius-md: 20px;
+  --radius-lg: 32px;
 }
 
 * {

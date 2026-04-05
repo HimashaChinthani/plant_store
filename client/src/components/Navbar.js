@@ -47,6 +47,7 @@ function Navbar() {
       <div style={linkContainerStyles}>
         <Link to="/" style={getLinkStyle("/")}>Home</Link>
         <Link to="/shop" style={getLinkStyle("/shop")}>Shop</Link>
+        <Link to="/gallery" style={getLinkStyle("/gallery")}>Gallery</Link>
         <Link to="/about" style={getLinkStyle("/about")}>About</Link>
         <Link to="/contact" style={getLinkStyle("/contact")}>Contact</Link>
       </div>
