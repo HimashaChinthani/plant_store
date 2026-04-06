@@ -49,7 +49,7 @@ function About() {
         <h1 style={{ fontSize: "3rem" }}>Our Story</h1>
         <div style={lineStyles}></div>
         <p style={textStyles}>
-          Founded in 2026, Florixa Plant Nursery began with a simple belief: every home deserves a touch of nature's tranquility. What started as a small personal collection has grown into a curated sanctuary for plant lovers across the country.
+          Established in 2026, Florixa Plant Nursery is a dedicated small business that began with a passion for bringing nature's tranquility into modern homes. What started as an intimate personal collection has grown into a mission to share the restorative power of greenery throughout the island. We hope to grow and build our presence all across Sri Lanka, helping every home discover its own natural sanctuary.
         </p>
       </section>
 
@@ -63,7 +63,7 @@ function About() {
         <div style={missionCardStyles}>
           <h3 style={{ marginBottom: "1rem", color: "var(--primary)" }}>Our Promise</h3>
           <p style={{ color: "var(--text-muted)", fontSize: "0.95rem" }}>
-            We guarantee the health and beauty of every plant we deliver, providing the knowledge and support you need to help your indoor garden thrive.
+            We guarantee the health of every plant delivered via our courier partners, providing the expert planting advice you need to help your garden thrive.
           </p>
         </div>
       </div>

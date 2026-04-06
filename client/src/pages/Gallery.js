@@ -77,7 +77,7 @@ function Gallery() {
       <header style={headerStyles}>
         <h1 style={{ fontSize: "3.5rem", marginBottom: "1rem" }}>Botanical <span style={{ color: "var(--secondary)" }}>Gallery</span></h1>
         <p style={{ color: "var(--text-muted)", fontSize: "1.1rem", maxWidth: "600px", margin: "0 auto" }}>
-          Explore the intersection of nature and design through our curated photographic collection.
+          Explore our curated gallery of high-quality plant photos, showcasing the beauty and diversity of our actual nursery collection.
         </p>
       </header>
 

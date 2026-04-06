@@ -115,23 +115,23 @@ function Home() {
         <div style={featureGridStyles}>
           <div style={featureCardStyles}>
             <div style={{ fontSize: "2.5rem", marginBottom: "1.5rem" }}>🌿</div>
-            <h3 style={{ marginBottom: "1rem" }}>Premium Quality</h3>
+            <h3 style={{ marginBottom: "1rem" }}>Quality Plants</h3>
             <p style={{ color: "var(--text-muted)", fontSize: "0.95rem" }}>
-              Each plant is carefully selected and nurtured to ensure peak health and aesthetics.
+              Each plant is hand-selected and nurtured to ensure superior health, vibrancy, and longevity.
             </p>
           </div>
           <div style={featureCardStyles}>
             <div style={{ fontSize: "2.5rem", marginBottom: "1.5rem" }}>🚚</div>
-            <h3 style={{ marginBottom: "1rem" }}>Careful Delivery</h3>
+            <h3 style={{ marginBottom: "1rem" }}>Courier Delivery</h3>
             <p style={{ color: "var(--text-muted)", fontSize: "0.95rem" }}>
-              Our specialized packaging ensures your new plants arrive safely at your doorstep.
+              We ensure your plants reach you safely and efficiently through our trusted courier services.
             </p>
           </div>
           <div style={featureCardStyles}>
-            <div style={{ fontSize: "2.5rem", marginBottom: "1.5rem" }}>💚</div>
-            <h3 style={{ marginBottom: "1rem" }}>Lifetime Support</h3>
+            <div style={{ fontSize: "2.5rem", marginBottom: "1.5rem" }}>🌱</div>
+            <h3 style={{ marginBottom: "1rem" }}>Planting Advice</h3>
             <p style={{ color: "var(--text-muted)", fontSize: "0.95rem" }}>
-              Get expert advice and plant care tips whenever you need them from our experts.
+              Get expert guidance and practical tips on how to plant and maintain your new green companions.
             </p>
           </div>
         </div>
