@@ -21,7 +21,7 @@ function Admin() {
   useEffect(() => {
     const token = localStorage.getItem("adminToken");
     if (!token) {
-      navigate("/greennest-portal-2026");
+      navigate("/login");
     } else {
       fetchPlants();
     }
@@ -36,7 +36,7 @@ function Admin() {
   const handleLogout = () => {
     localStorage.removeItem("adminToken");
     localStorage.removeItem("adminUsername");
-    navigate("/greennest-portal-2026");
+    navigate("/login");
   };
 
   const handleChange = (e) => {
@@ -136,7 +136,7 @@ function Admin() {
         if (err.response?.status === 403 || err.response?.status === 401) {
           setMessage("Session expired. Please login again.");
           localStorage.removeItem("adminToken");
-          setTimeout(() => navigate("/greennest-portal-2026"), 2000);
+          setTimeout(() => navigate("/login"), 2000);
         } else {
           setMessage(`Failed to ${editingId ? "update" : "add"} plant.`);
         }

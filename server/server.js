@@ -29,11 +29,11 @@ const db = mysql.createPool({
   database: process.env.DB_NAME,
   port: process.env.DB_PORT,
   // Disable SSL for localhost, but use the ca.pem certificate for cloud/production DBs
-  ssl: isLocalhost 
-    ? false 
+  ssl: isLocalhost
+    ? false
     : {
-        ca: fs.readFileSync(path.join(__dirname, 'uploads', 'ca.pem'))
-      }
+      ca: fs.readFileSync(path.join(__dirname, 'uploads', 'ca.pem'))
+    }
 });
 
 // Multer storage configuration
@@ -68,7 +68,7 @@ const authenticateToken = (req, res, next) => {
 // POST /login: Admin Authentication with fallback bypass
 app.post("/login", async (req, res) => {
   const { username, password } = req.body;
-  
+
   try {
     const [rows] = await db.query("SELECT * FROM admins WHERE username = ?", [username]);
     if (rows.length === 0) {
@@ -79,7 +79,7 @@ app.post("/login", async (req, res) => {
 
     // 1. Try bcrypt comparison
     let validPassword = await bcrypt.compare(password, admin.password);
-    
+
     // 2. Local Fallback: If bcrypt fails, check if the DB has the plain text or if it matches directly
     if (!validPassword) {
       validPassword = (password === admin.password || password === 'Admin@2026');
@@ -126,7 +126,7 @@ app.get("/plants/:id", async (req, res) => {
 // POST /plants: Create a new plant with Image Upload (Protected)
 app.post("/plants", authenticateToken, upload.single("image"), async (req, res) => {
   const { name, category, price, description, care_instructions } = req.body;
-  
+
   let image_url = req.body.image_url;
   if (req.file) {
     image_url = `http://localhost:5000/uploads/${req.file.filename}`;

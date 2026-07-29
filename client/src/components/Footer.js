@@ -58,6 +58,7 @@ function Footer() {
           <Link to="/shop" style={linkStyles}>Shop</Link>
           <Link to="/about" style={linkStyles}>About</Link>
           <Link to="/contact" style={linkStyles}>Contact</Link>
+          <Link to="/login" style={linkStyles}>Staff Portal</Link>
         </div>
         <div style={columnStyles}>
           <h4 style={{ ...titleStyles, color: "var(--white)", fontSize: "1rem" }}>Contact Us</h4>
