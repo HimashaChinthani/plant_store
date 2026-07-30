@@ -28,7 +28,7 @@ function Admin() {
   }, [navigate]);
 
   const fetchPlants = () => {
-    axios.get("http://localhost:5000/plants")
+    axios.get("/api/plants")
       .then((res) => setPlants(res.data))
       .catch((err) => console.error(err));
   };
@@ -85,7 +85,7 @@ function Admin() {
   const handleDelete = (id) => {
     if (window.confirm("Are you sure you want to delete this plant? This action cannot be undone.")) {
       const token = localStorage.getItem("adminToken");
-      axios.delete(`http://localhost:5000/plants/${id}`, {
+      axios.delete(`/api/plants/${id}`, {
         headers: { Authorization: `Bearer ${token}` }
       })
       .then(() => {
@@ -117,10 +117,10 @@ function Admin() {
     }
 
     const request = editingId 
-      ? axios.put(`http://localhost:5000/plants/${editingId}`, data, {
+      ? axios.put(`/api/plants/${editingId}`, data, {
           headers: { Authorization: `Bearer ${token}`, "Content-Type": "multipart/form-data" }
         })
-      : axios.post("http://localhost:5000/plants", data, {
+      : axios.post("/api/plants", data, {
           headers: { Authorization: `Bearer ${token}`, "Content-Type": "multipart/form-data" }
         });
 

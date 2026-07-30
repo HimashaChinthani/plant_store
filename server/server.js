@@ -129,7 +129,7 @@ app.post("/plants", authenticateToken, upload.single("image"), async (req, res) 
 
   let image_url = req.body.image_url;
   if (req.file) {
-    image_url = `http://localhost:5000/uploads/${req.file.filename}`;
+    image_url = `/api/uploads/${req.file.filename}`;
   }
 
   if (!name || !price) {
@@ -153,7 +153,7 @@ app.put("/plants/:id", authenticateToken, upload.single("image"), async (req, re
   let image_url = req.body.image_url;
 
   if (req.file) {
-    image_url = `http://localhost:5000/uploads/${req.file.filename}`;
+    image_url = `/api/uploads/${req.file.filename}`;
   }
 
   try {

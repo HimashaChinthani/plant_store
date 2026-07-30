@@ -14,7 +14,7 @@ function Login() {
     setLoading(true);
     setError("");
 
-    axios.post("http://localhost:5000/login", { username, password })
+    axios.post("/api/login", { username, password })
       .then((res) => {
         localStorage.setItem("adminToken", res.data.token);
         localStorage.setItem("adminUsername", res.data.username);

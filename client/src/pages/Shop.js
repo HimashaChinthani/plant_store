@@ -8,7 +8,7 @@ function Shop() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    axios.get("http://localhost:5000/plants")
+    axios.get("/api/plants")
       .then(res => {
         setPlants(res.data);
         setLoading(false);

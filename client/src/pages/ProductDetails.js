@@ -10,7 +10,7 @@ function ProductDetails() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    axios.get(`http://localhost:5000/plants/${id}`)
+    axios.get(`/api/plants/${id}`)
       .then(res => {
         setPlant(res.data);
         setLoading(false);
