@@ -19,7 +19,7 @@ const PORT = process.env.PORT || 5000;
 const JWT_SECRET = process.env.JWT_SECRET || "fallback_secret";
 
 // Check if running on localhost to dynamically handle SSL settings
-const isLocalhost = process.env.DB_HOST === "localhost" || process.env.DB_HOST === "127.0.0.1";
+const isLocalhost = process.env.DB_HOST === "localhost" || process.env.DB_HOST === "127.0.0.1" || process.env.DB_HOST === "db";
 
 // MySQL connection pool setup
 const db = mysql.createPool({
