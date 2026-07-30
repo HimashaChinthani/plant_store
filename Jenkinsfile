@@ -50,7 +50,7 @@ pipeline {
             steps {
                 withCredentials([sshUserPrivateKey(credentialsId: 'ec2-ssh-key', keyFileVariable: 'SSH_KEY')]) {
                     bat """
-                    ssh -i "%SSH_KEY%" -o StrictHostKeyChecking=no %EC2_USER%@%EC2_IP% "if [ ! -d %EC2_PROJECT_PATH% ]; then git clone https://github.com/HimashaChinthani/plant_store.git %EC2_PROJECT_PATH%; fi && cd %EC2_PROJECT_PATH% && git fetch --all && git reset --hard origin/main && docker pull %DOCKER_IMAGE_BACKEND%:latest && docker pull %DOCKER_IMAGE_FRONTEND%:latest && docker compose down && docker compose up -d"
+                    ssh -i "%SSH_KEY%" -o StrictHostKeyChecking=no %EC2_USER%@%EC2_IP% "if [ ! -d %EC2_PROJECT_PATH% ]; then git clone https://github.com/HimashaChinthani/plant_store.git %EC2_PROJECT_PATH%; fi && cd %EC2_PROJECT_PATH% && git fetch --all && git reset --hard origin/main && docker compose down && docker image prune -af && docker pull %DOCKER_IMAGE_BACKEND%:latest && docker pull %DOCKER_IMAGE_FRONTEND%:latest && docker compose up -d"
                     """
                 }
             }
